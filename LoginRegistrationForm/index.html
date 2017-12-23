@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>queroquero</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="casa, alimentos, saudaveis, compras, logistica" />
+        <meta name="author" content="Fabrizio Salvade" />
+        <link rel="shortcut icon" href="../public/img/ico/queroquerologo.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    </head>
+    <body>
+        <div class="container">
+           
+            <header>
+                <img src="../public/img/queroquerologo.png" height="100px">
+                <h1>quero <span>quero</span></h1>
+				
+            </header>
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="loga" autocomplete="on"> 
+                                <h1>Entrar</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Email ou nome do usuário </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="usuario or usuario@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Sua senha </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+									<label for="loginkeeping">Mantenha-me conectado</label>
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Entre" /> 
+								</p>
+                                <p class="change_link">
+									Ainda nao se cadastrou ?
+									<a href="#toregister" class="to_register">faça parte!</a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="registra" autocomplete="on"> 
+                                <h1> Registrar </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Usuario</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Usuario" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Seu email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="meuemail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Senha </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Por favor, confirme a sua senha... </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="Registre-me!"/> 
+								</p>
+                                <p class="change_link">  
+									Já é nosso membro ?
+									<a href="#tologin" class="to_register"> Entre aqui! </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

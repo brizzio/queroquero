@@ -18,14 +18,14 @@ function getProducts(txt){
             console.log(produtos);
             let output = ''
             $.each(produtos, (index, produto)=>{
-                
+                    `	
                     <div class="col-md-3">
                         <div class = "well text-center">
                              <h5>$(produto.title)</h5>
                             
                         </div>
                     </div>
-                
+                `
             });
             console.log(output)
             $('produtos').html(output);
